@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buiu Sanduíches - Cardápio Digital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🍔 Buiu Sanduíches</h1>
+    <p>Peça rápido pelo WhatsApp</p>
+</header>
+
+<main class="container">
+
+<!-- HAMBÚRGUER BOVINO -->
+<section class="categoria">
+<h2>🍔 Hambúrguer Bovino</h2>
+
+<div class="produto">
+<div class="info">
+<b>Hambúrguer</b>
+<span>Pão, hambúrguer, ovo, mussarela, alface e tomate</span>
+</div>
+<div class="acoes">
+<span>R$ 11,00</span>
+<button onclick="add('Hamburguer',11)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>X-Burguer</b>
+<span>Pão, hambúrguer, mussarela, presunto, requeijão, alface e tomate</span>
+</div>
+<div class="acoes">
+<span>R$ 14,00</span>
+<button onclick="add('XBurguer',14)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>Bauru</b>
+<span>Pão, hambúrguer, ovo, mussarela, presunto, requeijão, alface e tomate</span>
+</div>
+<div class="acoes">
+<span>R$ 16,00</span>
+<button onclick="add('Bauru',16)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>X-Tudo</b>
+<span>Pão, hambúrguer, bacon, salsicha, mussarela, requeijão, ovo, presunto, alface e tomate</span>
+</div>
+<div class="acoes">
+<span>R$ 20,00</span>
+<button onclick="add('XTudo',20)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>X-Bacon</b>
+<span>Pão, hambúrguer, bacon, mussarela, presunto, requeijão, alface e tomate</span>
+</div>
+<div class="acoes">
+<span>R$ 22,00</span>
+<button onclick="add('XBacon',22)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>Misto</b>
+<span>Pão de forma, queijo mussarela, presunto</span>
+</div>
+<div class="acoes">
+<span>R$ 10,00</span>
+<button onclick="add('Misto',10)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>Filé de Carne</b>
+</div>
+<div class="acoes">
+<span>R$ 24,00</span>
+<button onclick="add('FileCarne',24)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>Sertanejo</b>
+</div>
+<div class="acoes">
+<span>R$ 24,00</span>
+<button onclick="add('Sertanejo',24)">+</button>
+</div>
+</div>
+
+<div class="produto">
+<div class="info">
+<b>Filé de Sol</b>
+</div>
+<div class="acoes">
+<span>R$ 24,00</span>
+<button onclick="add('FileSol',24)">+</button>
+</div>
+</div>
+</section>
+
+<!-- MAIS TOP -->
+<section class="categoria">
+<h2>🔥 Os Mais Top</h2>
+
+<div class="produto">
+<div class="info"><b>Buiu</b></div>
+<div class="acoes"><span>R$ 25,00</span><button onclick="add('Buiu',25)">+</button></div>
+</div>
+
+<div class="produto">
+<div class="info"><b>X-Caseiro</b></div>
+<div class="acoes"><span>R$ 24,00</span><button onclick="add('XCaseiro',24)">+</button></div>
+</div>
+
+<div class="produto">
+<div class="info"><b>Buiu Especial</b></div>
+<div class="acoes"><span>R$ 36,00</span><button onclick="add('BuiuEspecial',36)">+</button></div>
+</div>
+</section>
+
+<!-- FRANGO -->
+<section class="categoria">
+<h2>🍗 Burguer de Frango</h2>
+
+<div class="produto"><div class="info"><b>Frangabacon</b></div><div class="acoes"><span>R$ 24,00</span><button onclick="add('Frangabacon',24)">+</button></div></div>
+<div class="produto"><div class="info"><b>Franburguer</b></div><div class="acoes"><span>R$ 23,10</span><button onclick="add('Franburguer',23.10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Fran Coração</b></div><div class="acoes"><span>R$ 25,00</span><button onclick="add('FranCoracao',25)">+</button></div></div>
+<div class="produto"><div class="info"><b>Passaporte</b></div><div class="acoes"><span>R$ 22,00</span><button onclick="add('Passaporte',22)">+</button></div></div>
+<div class="produto"><div class="info"><b>Buiu Duplo</b></div><div class="acoes"><span>R$ 30,00</span><button onclick="add('BuiuDuplo',30)">+</button></div></div>
+<div class="produto"><div class="info"><b>X-Calabresa</b></div><div class="acoes"><span>R$ 24,00</span><button onclick="add('XCalabresa',24)">+</button></div></div>
+<div class="produto"><div class="info"><b>Buiu Duplo c/ Frango</b></div><div class="acoes"><span>R$ 32,00</span><button onclick="add('BuiuFrango',32)">+</button></div></div>
+
+</section>
+
+<!-- CAMARÃO -->
+<section class="categoria">
+<h2>🦐 Burguer de Camarão</h2>
+
+<div class="produto"><div class="info"><b>X-Camarão</b></div><div class="acoes"><span>R$ 25,00</span><button onclick="add('XCamarao',25)">+</button></div></div>
+<div class="produto"><div class="info"><b>Framarão</b></div><div class="acoes"><span>R$ 25,00</span><button onclick="add('Framarao',25)">+</button></div></div>
+
+</section>
+
+<!-- CACHORRO QUENTE -->
+<section class="categoria">
+<h2>🌭 Cachorro Quente</h2>
+
+<div class="produto"><div class="info"><b>Tradicional</b></div><div class="acoes"><span>R$ 7,50</span><button onclick="add('Tradicional',7.50)">+</button></div></div>
+<div class="produto"><div class="info"><b>Especial</b></div><div class="acoes"><span>R$ 17,00</span><button onclick="add('Especial',17)">+</button></div></div>
+<div class="produto"><div class="info"><b>Sertanejo</b></div><div class="acoes"><span>R$ 17,00</span><button onclick="add('HotSertanejo',17)">+</button></div></div>
+<div class="produto"><div class="info"><b>De Coração</b></div><div class="acoes"><span>R$ 17,00</span><button onclick="add('HotCoracao',17)">+</button></div></div>
+<div class="produto"><div class="info"><b>De Camarão</b></div><div class="acoes"><span>R$ 20,00</span><button onclick="add('HotCamarao',20)">+</button></div></div>
+<div class="produto"><div class="info"><b>De Bacon</b></div><div class="acoes"><span>R$ 17,00</span><button onclick="add('HotBacon',17)">+</button></div></div>
+<div class="produto"><div class="info"><b>Sanduíche de Frango</b></div><div class="acoes"><span>R$ 20,00</span><button onclick="add('SandFrango',20)">+</button></div></div>
+
+</section>
+
+<!-- PETISCOS -->
+<section class="categoria">
+<h2>🍟 Petiscos</h2>
+
+<div class="produto"><div class="info"><b>Batata Pequena</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('BatataP',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Batata Média</b></div><div class="acoes"><span>R$ 15,00</span><button onclick="add('BatataM',15)">+</button></div></div>
+<div class="produto"><div class="info"><b>Batata + Cheddar + Bacon</b></div><div class="acoes"><span>R$ 22,00</span><button onclick="add('BatataCheddar',22)">+</button></div></div>
+<div class="produto"><div class="info"><b>Filé c/ Fritas</b></div><div class="acoes"><span>R$ 50,00</span><button onclick="add('FileFritas',50)">+</button></div></div>
+<div class="produto"><div class="info"><b>Calabresa c/ Fritas</b></div><div class="acoes"><span>R$ 50,00</span><button onclick="add('CalabresaFritas',50)">+</button></div></div>
+<div class="produto"><div class="info"><b>Acebolada c/ Fritas</b></div><div class="acoes"><span>R$ 50,00</span><button onclick="add('AceboladaFritas',50)">+</button></div></div>
+
+</section>
+
+<!-- PASTEL -->
+<section class="categoria">
+<h2>🥟 Pastel</h2>
+
+<div class="produto"><div class="info"><b>Queijo</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('PastelQueijo',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Mussarela</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('PastelMussarela',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Carne de Sol</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('PastelCarneSol',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Chocolate</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('PastelChocolate',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Frango</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('PastelFrango',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Pizza</b></div><div class="acoes"><span>R$ 13,00</span><button onclick="add('PastelPizza',13)">+</button></div></div>
+
+</section>
+
+<!-- BEBIDAS -->
+<section class="categoria">
+<h2>🥤 Bebidas</h2>
+
+<div class="produto"><div class="info"><b>Refri Lata</b></div><div class="acoes"><span>R$ 7,00</span><button onclick="add('RefriLata',7)">+</button></div></div>
+<div class="produto"><div class="info"><b>Refri 250ml</b></div><div class="acoes"><span>R$ 5,00</span><button onclick="add('Refri250',5)">+</button></div></div>
+<div class="produto"><div class="info"><b>Refri 600ml</b></div><div class="acoes"><span>R$ 10,00</span><button onclick="add('Refri600',10)">+</button></div></div>
+<div class="produto"><div class="info"><b>Refri 1L</b></div><div class="acoes"><span>R$ 12,00</span><button onclick="add('Refri1L',12)">+</button></div></div>
+<div class="produto"><div class="info"><b>Coca 1L</b></div><div class="acoes"><span>R$ 13,00</span><button onclick="add('Coca1L',13)">+</button></div></div>
+<div class="produto"><div class="info"><b>Água c/ Gás</b></div><div class="acoes"><span>R$ 5,00</span><button onclick="add('AguaGas',5)">+</button></div></div>
+<div class="produto"><div class="info"><b>Água Mineral</b></div><div class="acoes"><span>R$ 3,00</span><button onclick="add('Agua',3)">+</button></div></div>
+
+</section>
+
+<!-- SUCOS -->
+<section class="categoria">
+<h2>🍹 Sucos</h2>
+
+<div class="produto"><div class="info"><b>Suco na Água</b></div><div class="acoes"><span>R$ 6,00</span><button onclick="add('SucoAgua',6)">+</button></div></div>
+<div class="produto"><div class="info"><b>Suco no Leite</b></div><div class="acoes"><span>R$ 8,00</span><button onclick="add('SucoLeite',8)">+</button></div></div>
+
+</section>
+
+<!-- AÇAÍ -->
+<section class="categoria">
+<h2>🍧 Açaí e Cupuaçu</h2>
+
+<div class="produto"><div class="info"><b>400ml</b></div><div class="acoes"><span>R$ 20,00</span><button onclick="add('Acai400',20)">+</button></div></div>
+<div class="produto"><div class="info"><b>500ml</b></div><div class="acoes"><span>R$ 22,00</span><button onclick="add('Acai500',22)">+</button></div></div>
+<div class="produto"><div class="info"><b>Guaraná do Amazonas 400ml</b></div><div class="acoes"><span>R$ 9,00</span><button onclick="add('Guarana',9)">+</button></div></div>
+
+</section>
+
+<!-- SHAKES -->
+<section class="categoria">
+<h2>🥛 Milk Shakes</h2>
+
+<div class="produto"><div class="info"><b>Morango</b></div><div class="acoes"><span>R$ 18,00</span><button onclick="add('ShakeMorango',18)">+</button></div></div>
+<div class="produto"><div class="info"><b>Chocolate</b></div><div class="acoes"><span>R$ 18,00</span><button onclick="add('ShakeChocolate',18)">+</button></div></div>
+<div class="produto"><div class="info"><b>Ovomaltine</b></div><div class="acoes"><span>R$ 20,00</span><button onclick="add('ShakeOvomaltine',20)">+</button></div></div>
+
+</section>
+
+</main>
+
+<section class="carrinho">
+<h2>🛒 Seu Pedido</h2>
+
+<div id="lista"></div>
+
+<h3>Total: R$ <span id="total">0.00</span></h3>
+
+<textarea id="obs-geral" placeholder="Ex: tirar cebola, sem salada, entregar rápido..." rows="3"></textarea>
+
+<button onclick="enviar()">Finalizar no WhatsApp</button>
+</section>
+
+<footer class="footer">
+<p>📍 Natal/RN</p>
+<p>📞 WhatsApp: (84) 98868-7921</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
