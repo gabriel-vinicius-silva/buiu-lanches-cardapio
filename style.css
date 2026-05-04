@@ -169,3 +169,14 @@ color:#888;
 border-color:#ff8c00;
 background:#1f1f1f;
 }
+.acompanhamentos{
+display:block;
+font-size:13px;
+color:#e0e0e0;
+margin-top:6px;
+line-height:1.5;
+background:rgba(255,140,0,0.08);
+padding:8px;
+border-radius:8px;
+border-left:3px solid #ff8c00;
+}
