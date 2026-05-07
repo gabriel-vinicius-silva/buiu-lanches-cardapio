@@ -66,12 +66,21 @@ function formatarNome(nome) {
     CalabresaFritas: "Calabresa c/ Fritas",
     AceboladaFritas: "Acebolada c/ Fritas",
 
-    PastelQueijo: "Pastel Queijo",
-    PastelMussarela: "Pastel Mussarela",
+    // PASTEIS
+    PastelQueijoMussarela: "Pastel Queijo Mussarela",
+    PastelQueijoCoalho: "Pastel Queijo Coalho",
     PastelCarneSol: "Pastel Carne de Sol",
-    PastelChocolate: "Pastel Chocolate",
     PastelFrango: "Pastel Frango",
     PastelPizza: "Pastel Pizza",
+    PastelMussarelaPresunto: "Pastel Mussarela com Presunto",
+    PastelCoalhoPresunto: "Pastel Coalho com Presunto",
+    PastelCoalhoCatupiry: "Pastel Coalho com Catupiry",
+    PastelCoalhoChocolate: "Pastel Coalho com Chocolate",
+    PastelCoalhoGoiabada: "Pastel Coalho com Goiabada",
+    PastelCarneSolCoalho: "Pastel Carne de Sol com Coalho",
+    PastelCarneSolCatupiry: "Pastel Carne de Sol com Catupiry",
+    PastelCamaraoCoalho: "Pastel Camarão com Coalho",
+    PastelCalabresaCoalho: "Pastel Calabresa com Coalho",
 
     RefriLata: "Refri Lata",
     Refri250: "Refri 250ml",
@@ -134,19 +143,15 @@ function enviar() {
 
   mensagem += `%0ATotal: R$ ${document.getElementById("total").innerText}`;
 
+  let obs = document.getElementById("obs-geral").value;
 
-// 👇 COLE AQUI
-let obs = document.getElementById("obs-geral").value;
+  if (obs.trim() !== "") {
+    mensagem += `%0A📝 Observações: ${encodeURIComponent(obs)}`;
+  }
 
-if(obs.trim() !== ""){
-  mensagem += `%0A📝 Observações: ${encodeURIComponent(obs)}`;
-}
+  const url = "https://wa.me/5584988687921?text=" + mensagem;
 
-// 👇 DEPOIS DISSO VEM A URL
-const url = "https://wa.me/5584988687921?text=" + mensagem;
-
-window.open(url, "_blank");
-}
+  window.open(url, "_blank");
 }
 
 /* ALTERAÇÃO PEDIDA:
